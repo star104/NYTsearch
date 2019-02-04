@@ -1,0 +1,16 @@
+.navBar {
+    height: 75px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+.navBar div {
+    margin: 10px;
+    color: white
+}
+
+.navBar div a {
+    color: white
+}
