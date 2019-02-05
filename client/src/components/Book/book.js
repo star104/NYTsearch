@@ -10,21 +10,20 @@ function Book(props) {
         <div className="card-body">
           <h5 className="cardtitle"> Title: {props.info.title}</h5>
           <p className="card-text">   {props.info.description}    </p>
-{/* 
-            {props.showSave ?
-             <div className="column">
+
+          
+            {/* <div assName="column">
               <button type="button" onClick={() => props.selectBook(props.info)} class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
                 Saved
 </button>
             </div>
-            :
 
             <div className="column">
               <button type="button" onClick={() => props.deleteBook(props.info._id)} class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
                 delete
-</button>
-            </div>
-          } */}
+ </button>
+            </div> */}
+          
         </div>
       </div>
     </div>
