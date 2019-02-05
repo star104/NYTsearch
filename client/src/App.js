@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route} from "react-router-dom";
-import ReactDOM from 'react-dom';
 
 import Home from './pages/Home/Home';
 import Saved from './pages/Saved/Saved';
@@ -19,7 +18,7 @@ class App extends Component {
             <Jumbotrom/>
             
                <Route exact path="/" component={Home} />
-               <Route exact path="/Saved" component={Saved} />
+               <Route exact path="/books" component={Saved} />
           </div>
         </Router>
       </div>
