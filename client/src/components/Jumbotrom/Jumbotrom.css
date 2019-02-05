@@ -1,7 +1,7 @@
 .jumbotrom{
     height: 250px;
-    background-color: blue;
-    margin: 10px;
+    background-color: gray;
+   margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
