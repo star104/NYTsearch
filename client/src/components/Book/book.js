@@ -6,15 +6,24 @@ function Book(props) {
 
     <div className="Books">
       <div className="card" >
-        <img src={props.info.imageLinks.thumbnail} className="card-img-top" />
+        <div className="imgWrapper">
+           <img src={props.info.imageLinks.thumbnail} className="image" />
+        </div>
         <div className="card-body">
           <h5 className="cardtitle"> Title: {props.info.title}</h5>
           <p className="card-text">   {props.info.description}    </p>
 
           <div className="column">
-              <button type="button" onClick={() => props.selectBook(props.info)} class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+          {props.delete ? 
+          <button type="button" onClick={() => props.deleteBook(props.info)} class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+          Delete
+</button>
+: 
+<button type="button" onClick={() => props.selectBook(props.info)} class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
                 Saved
 </button>
+          }
+              
             </div>
 {/* 
             {props.showSave ?

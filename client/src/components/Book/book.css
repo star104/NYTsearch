@@ -1,0 +1,18 @@
+.image {
+    width: 300px;
+    height: 300px;
+}
+.card {
+    width: 60%;
+    margin: 10px;
+}
+
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.Books {
+    display: flex;
+    justify-content: center;
+}

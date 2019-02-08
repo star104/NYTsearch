@@ -32,6 +32,13 @@ app.get('/saved', (req, res) => {
 //send id here
 //make route to delete 
 
+app.post('/delete', (req, res) => {
+    const id = req.body.id;
+    db.deleteOne({_id: id}).then(result => {
+        res.send('deleted')
+    })
+})
+
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
