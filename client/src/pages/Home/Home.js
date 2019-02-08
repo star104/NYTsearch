@@ -57,7 +57,7 @@ class Home extends React.Component {
                         <h2> Search book</h2>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" name="search" onKeyPress={this.handleKeyPress} onChange={this.handleInput} class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                        <input type="text" name="search" onKeyPress={this.handleKeyPress} onChange={this.handleInput} class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2" />
                         <div class="input-group-append">
                             <button type="submit" onClick={this.handleSearch}>Search</button>
                         </div>
